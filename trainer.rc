@@ -1,0 +1,33 @@
+// trainer.rc - 图标资源 + 版本信息
+// 图标换成 ldjj.jpg 抠好的雷电影小恐龙造型（多尺寸 ICO，含 256x256）
+#define IDI_APPICON 101
+IDI_APPICON ICON "app.ico"
+
+// 版本信息：资源管理器里显示正常名字/版本，而不是空白
+// 语言块用 080404b0 = 简体中文(0x0804) + Unicode(0x04b0=1200)
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+FILEFLAGSMASK   0x3fL
+FILEFLAGS       0x0L
+FILEOS          0x40004L
+FILETYPE        0x1L
+FILESUBTYPE     0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription",  "Horizon Walker Modifier"
+            VALUE "FileVersion",      "1.0.0.0"
+            VALUE "InternalName",     "RaidenTrainer"
+            VALUE "OriginalFilename", "RaidenTrainer.exe"
+            VALUE "ProductName",      "Raiden Shogun Trainer"
+            VALUE "ProductVersion",   "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
